@@ -5,7 +5,7 @@
 #  id             :integer          not null, primary key
 #  code           :string           not null
 #  url            :string           not null
-#  application_id :boolean          not null
+#  application_id :integer          not null
 #  created_at     :datetime         not null
 #  updated_at     :datetime         not null
 #

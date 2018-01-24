@@ -1,0 +1,67 @@
+.admin-area {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.admin-area h2{
+  text-align: center;
+}
+
+.application-index-container {
+  margin-top: 25px;
+  border-bottom: 3px double #ccc;
+  height: 40%;
+  padding-bottom: 2px;
+  overflow: hidden;
+}
+.application-index-container h4{
+  margin-left: 20px;
+}
+
+.applications {
+  border-top: 1px solid #ccc;
+  margin-top: 20px;
+  list-style: none;
+  height: 100%;
+  overflow-y: scroll;
+  padding: 0;
+  margin: 0;
+}
+
+.application-index-item {
+  padding-left: 20px;
+  height: 30px;
+  border-bottom: 1px solid #ccc;
+}
+
+.application-index-item:nth-of-type(2n) {
+  background-color: #aaa;
+}
+
+.application-index-item span {
+  padding-right: 5px;
+}
+
+.full-applicant-info {
+  padding: 20px;
+}
+
+.applicant-info {
+  float: left;
+}
+
+.applicant-info ul{
+  list-style: none;
+  padding-left: 15px;
+}
+
+.app-code-container {
+  float: left;
+  min-width: 500px;
+  margin-left: 20px;
+}
+
+.appButtons .btn{
+ margin-right: 10px;
+}

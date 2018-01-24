@@ -16,11 +16,13 @@ ActiveRecord::Schema.define(version: 20180123004159) do
   enable_extension "plpgsql"
 
   create_table "coding_challenges", force: :cascade do |t|
-    t.string "code", null: false
+    t.string "code"
     t.string "url", null: false
-    t.boolean "application_id", null: false
+    t.integer "application_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["application_id"], name: "index_coding_challenges_on_application_id"
+    t.index ["url"], name: "index_coding_challenges_on_url"
   end
 
   create_table "student_applications", force: :cascade do |t|
