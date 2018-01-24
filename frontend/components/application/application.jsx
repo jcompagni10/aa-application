@@ -57,7 +57,7 @@ export default class Application extends React.Component {
             <input
               className="form-control"
               id="email"
-              type="text"
+              type="email"
               onChange={this.handleChange("email")}
             />
           </div>
