@@ -1,0 +1,15 @@
+/* line 1, /Users/julian/Desktop/app-academy/app/assets/stylesheets/component_styles/application.scss */
+.application-wrapper {
+  text-align: center;
+}
+
+/* line 5, /Users/julian/Desktop/app-academy/app/assets/stylesheets/component_styles/application.scss */
+.application-form {
+  text-align: left;
+  margin: 0 auto;
+  width: 550px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  padding: 40px;
+  margin-top: 50px;
+}

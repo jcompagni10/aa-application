@@ -1,0 +1,761 @@
+/* line 1, /Users/julian/Desktop/app-academy/app/assets/stylesheets/base/general.scss */
+#root {
+  padding: 20px;
+}
+/* BASICS */
+/* line 4, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+.CodeMirror {
+  /* Set height, width, borders, and global font properties here */
+  font-family: monospace;
+  height: 300px;
+  color: black;
+  direction: ltr;
+}
+
+/* PADDING */
+/* line 14, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+.CodeMirror-lines {
+  padding: 4px 0;
+  /* Vertical padding around content */
+}
+
+/* line 17, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+.CodeMirror pre {
+  padding: 0 4px;
+  /* Horizontal padding of content */
+}
+
+/* line 21, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+.CodeMirror-scrollbar-filler, .CodeMirror-gutter-filler {
+  background-color: white;
+  /* The little square between H and V scrollbars */
+}
+
+/* GUTTER */
+/* line 27, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+.CodeMirror-gutters {
+  border-right: 1px solid #ddd;
+  background-color: #f7f7f7;
+  white-space: nowrap;
+}
+
+/* line 33, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+.CodeMirror-linenumber {
+  padding: 0 3px 0 5px;
+  min-width: 20px;
+  text-align: right;
+  color: #999;
+  white-space: nowrap;
+}
+
+/* line 41, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+.CodeMirror-guttermarker {
+  color: black;
+}
+
+/* line 42, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+.CodeMirror-guttermarker-subtle {
+  color: #999;
+}
+
+/* CURSOR */
+/* line 46, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+.CodeMirror-cursor {
+  border-left: 1px solid black;
+  border-right: none;
+  width: 0;
+}
+
+/* Shown when moving in bi-directional text */
+/* line 52, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+.CodeMirror div.CodeMirror-secondarycursor {
+  border-left: 1px solid silver;
+}
+
+/* line 55, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+.cm-fat-cursor .CodeMirror-cursor {
+  width: auto;
+  border: 0 !important;
+  background: #7e7;
+}
+
+/* line 60, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+.cm-fat-cursor div.CodeMirror-cursors {
+  z-index: 1;
+}
+
+/* line 63, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+.cm-fat-cursor-mark {
+  background-color: rgba(20, 255, 20, 0.5);
+  -webkit-animation: blink 1.06s steps(1) infinite;
+  -moz-animation: blink 1.06s steps(1) infinite;
+  animation: blink 1.06s steps(1) infinite;
+}
+
+/* line 69, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+.cm-animate-fat-cursor {
+  width: auto;
+  border: 0;
+  -webkit-animation: blink 1.06s steps(1) infinite;
+  -moz-animation: blink 1.06s steps(1) infinite;
+  animation: blink 1.06s steps(1) infinite;
+  background-color: #7e7;
+}
+
+@-moz-keyframes blink {
+  50% {
+    background-color: transparent;
+  }
+}
+@-webkit-keyframes blink {
+  50% {
+    background-color: transparent;
+  }
+}
+@keyframes blink {
+  50% {
+    background-color: transparent;
+  }
+}
+/* Can style cursor different in overwrite (non-insert) mode */
+/* line 96, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+.cm-tab {
+  display: inline-block;
+  text-decoration: inherit;
+}
+
+/* line 98, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+.CodeMirror-rulers {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -50px;
+  bottom: -20px;
+  overflow: hidden;
+}
+
+/* line 103, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+.CodeMirror-ruler {
+  border-left: 1px solid #ccc;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+/* DEFAULT THEME */
+/* line 111, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+.cm-s-default .cm-header {
+  color: blue;
+}
+
+/* line 112, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+.cm-s-default .cm-quote {
+  color: #090;
+}
+
+/* line 113, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+.cm-negative {
+  color: #d44;
+}
+
+/* line 114, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+.cm-positive {
+  color: #292;
+}
+
+/* line 115, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+.cm-header, .cm-strong {
+  font-weight: bold;
+}
+
+/* line 116, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+.cm-em {
+  font-style: italic;
+}
+
+/* line 117, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+.cm-link {
+  text-decoration: underline;
+}
+
+/* line 118, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+.cm-strikethrough {
+  text-decoration: line-through;
+}
+
+/* line 120, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+.cm-s-default .cm-keyword {
+  color: #708;
+}
+
+/* line 121, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+.cm-s-default .cm-atom {
+  color: #219;
+}
+
+/* line 122, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+.cm-s-default .cm-number {
+  color: #164;
+}
+
+/* line 123, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+.cm-s-default .cm-def {
+  color: #00f;
+}
+
+/* line 128, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+.cm-s-default .cm-variable-2 {
+  color: #05a;
+}
+
+/* line 129, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+.cm-s-default .cm-variable-3, .cm-s-default .cm-type {
+  color: #085;
+}
+
+/* line 130, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+.cm-s-default .cm-comment {
+  color: #a50;
+}
+
+/* line 131, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+.cm-s-default .cm-string {
+  color: #a11;
+}
+
+/* line 132, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+.cm-s-default .cm-string-2 {
+  color: #f50;
+}
+
+/* line 133, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+.cm-s-default .cm-meta {
+  color: #555;
+}
+
+/* line 134, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+.cm-s-default .cm-qualifier {
+  color: #555;
+}
+
+/* line 135, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+.cm-s-default .cm-builtin {
+  color: #30a;
+}
+
+/* line 136, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+.cm-s-default .cm-bracket {
+  color: #997;
+}
+
+/* line 137, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+.cm-s-default .cm-tag {
+  color: #170;
+}
+
+/* line 138, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+.cm-s-default .cm-attribute {
+  color: #00c;
+}
+
+/* line 139, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+.cm-s-default .cm-hr {
+  color: #999;
+}
+
+/* line 140, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+.cm-s-default .cm-link {
+  color: #00c;
+}
+
+/* line 142, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+.cm-s-default .cm-error {
+  color: #f00;
+}
+
+/* line 143, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+.cm-invalidchar {
+  color: #f00;
+}
+
+/* line 145, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+.CodeMirror-composing {
+  border-bottom: 2px solid;
+}
+
+/* Default styles for common addons */
+/* line 149, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+div.CodeMirror span.CodeMirror-matchingbracket {
+  color: #0b0;
+}
+
+/* line 150, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+div.CodeMirror span.CodeMirror-nonmatchingbracket {
+  color: #a22;
+}
+
+/* line 151, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+.CodeMirror-matchingtag {
+  background: rgba(255, 150, 0, 0.3);
+}
+
+/* line 152, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+.CodeMirror-activeline-background {
+  background: #e8f2ff;
+}
+
+/* STOP */
+/* The rest of this file contains styles related to the mechanics of
+   the editor. You probably shouldn't touch them. */
+/* line 159, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+.CodeMirror {
+  position: relative;
+  overflow: hidden;
+  background: white;
+}
+
+/* line 165, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+.CodeMirror-scroll {
+  overflow: scroll !important;
+  /* Things will break if this is overridden */
+  /* 30px is the magic margin used to hide the element's real scrollbars */
+  /* See overflow: hidden in .CodeMirror */
+  margin-bottom: -30px;
+  margin-right: -30px;
+  padding-bottom: 30px;
+  height: 100%;
+  outline: none;
+  /* Prevent dragging from highlighting the element */
+  position: relative;
+}
+
+/* line 175, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+.CodeMirror-sizer {
+  position: relative;
+  border-right: 30px solid transparent;
+}
+
+/* The fake, visible scrollbars. Used to force redraw during scrolling
+   before actual scrolling happens, thus preventing shaking and
+   flickering artifacts. */
+/* line 183, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+.CodeMirror-vscrollbar, .CodeMirror-hscrollbar, .CodeMirror-scrollbar-filler, .CodeMirror-gutter-filler {
+  position: absolute;
+  z-index: 6;
+  display: none;
+}
+
+/* line 188, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+.CodeMirror-vscrollbar {
+  right: 0;
+  top: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+/* line 193, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+.CodeMirror-hscrollbar {
+  bottom: 0;
+  left: 0;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+
+/* line 198, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+.CodeMirror-scrollbar-filler {
+  right: 0;
+  bottom: 0;
+}
+
+/* line 201, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+.CodeMirror-gutter-filler {
+  left: 0;
+  bottom: 0;
+}
+
+/* line 205, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+.CodeMirror-gutters {
+  position: absolute;
+  left: 0;
+  top: 0;
+  min-height: 100%;
+  z-index: 3;
+}
+
+/* line 210, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+.CodeMirror-gutter {
+  white-space: normal;
+  height: 100%;
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: -30px;
+}
+
+/* line 217, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+.CodeMirror-gutter-wrapper {
+  position: absolute;
+  z-index: 4;
+  background: none !important;
+  border: none !important;
+}
+
+/* line 223, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+.CodeMirror-gutter-background {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 4;
+}
+
+/* line 228, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+.CodeMirror-gutter-elt {
+  position: absolute;
+  cursor: default;
+  z-index: 4;
+}
+
+/* line 233, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+.CodeMirror-gutter-wrapper ::selection {
+  background-color: transparent;
+}
+
+/* line 234, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+.CodeMirror-gutter-wrapper ::-moz-selection {
+  background-color: transparent;
+}
+
+/* line 236, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+.CodeMirror-lines {
+  cursor: text;
+  min-height: 1px;
+  /* prevents collapsing before first draw */
+}
+
+/* line 240, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+.CodeMirror pre {
+  /* Reset some styles that the rest of the page might have set */
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  border-width: 0;
+  background: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  margin: 0;
+  white-space: pre;
+  word-wrap: normal;
+  line-height: inherit;
+  color: inherit;
+  z-index: 2;
+  position: relative;
+  overflow: visible;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-variant-ligatures: contextual;
+  font-variant-ligatures: contextual;
+}
+
+/* line 259, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+.CodeMirror-wrap pre {
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  word-break: normal;
+}
+
+/* line 265, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+.CodeMirror-linebackground {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+/* line 271, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+.CodeMirror-linewidget {
+  position: relative;
+  z-index: 2;
+  overflow: auto;
+}
+
+/* line 279, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+.CodeMirror-rtl pre {
+  direction: rtl;
+}
+
+/* line 281, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+.CodeMirror-code {
+  outline: none;
+}
+
+/* Force content-box sizing for the elements where we expect it */
+/* line 286, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+.CodeMirror-scroll,
+.CodeMirror-sizer,
+.CodeMirror-gutter,
+.CodeMirror-gutters,
+.CodeMirror-linenumber {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* line 295, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+.CodeMirror-measure {
+  position: absolute;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+/* line 303, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+.CodeMirror-cursor {
+  position: absolute;
+  pointer-events: none;
+}
+
+/* line 307, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+.CodeMirror-measure pre {
+  position: static;
+}
+
+/* line 309, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+div.CodeMirror-cursors {
+  visibility: hidden;
+  position: relative;
+  z-index: 3;
+}
+
+/* line 314, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+div.CodeMirror-dragcursors {
+  visibility: visible;
+}
+
+/* line 318, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+.CodeMirror-focused div.CodeMirror-cursors {
+  visibility: visible;
+}
+
+/* line 322, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+.CodeMirror-selected {
+  background: #d9d9d9;
+}
+
+/* line 323, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+.CodeMirror-focused .CodeMirror-selected {
+  background: #d7d4f0;
+}
+
+/* line 324, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+.CodeMirror-crosshair {
+  cursor: crosshair;
+}
+
+/* line 325, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+.CodeMirror-line::selection, .CodeMirror-line > span::selection, .CodeMirror-line > span > span::selection {
+  background: #d7d4f0;
+}
+
+/* line 326, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+.CodeMirror-line::-moz-selection, .CodeMirror-line > span::-moz-selection, .CodeMirror-line > span > span::-moz-selection {
+  background: #d7d4f0;
+}
+
+/* line 328, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+.cm-searching {
+  background-color: #ffa;
+  background-color: rgba(255, 255, 0, 0.4);
+}
+
+/* Used to force a border model for a node */
+/* line 334, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+.cm-force-border {
+  padding-right: .1px;
+}
+
+@media print {
+  /* Hide the cursor when printing */
+  /* line 338, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+  .CodeMirror div.CodeMirror-cursors {
+    visibility: hidden;
+  }
+}
+/* See issue #2901 */
+/* line 344, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+.cm-tab-wrap-hack:after {
+  content: '';
+}
+
+/* Help users use markselection to safely style text background */
+/* line 347, /Users/julian/Desktop/app-academy/app/assets/stylesheets/code_mirror/code_mirror.scss */
+span.CodeMirror-selectedtext {
+  background: none;
+}
+/* Based on Sublime Text's Monokai theme */
+
+
+.cm-s-monokai.CodeMirror { background: #272822; color: #f8f8f2; }
+.cm-s-monokai div.CodeMirror-selected { background: #49483E; }
+.cm-s-monokai .CodeMirror-line::selection, .cm-s-monokai .CodeMirror-line > span::selection, .cm-s-monokai .CodeMirror-line > span > span::selection { background: rgba(73, 72, 62, .99); }
+.cm-s-monokai .CodeMirror-line::-moz-selection, .cm-s-monokai .CodeMirror-line > span::-moz-selection, .cm-s-monokai .CodeMirror-line > span > span::-moz-selection { background: rgba(73, 72, 62, .99); }
+.cm-s-monokai .CodeMirror-gutters { background: #272822; border-right: 0px; }
+.cm-s-monokai .CodeMirror-guttermarker { color: white; }
+.cm-s-monokai .CodeMirror-guttermarker-subtle { color: #d0d0d0; }
+.cm-s-monokai .CodeMirror-linenumber { color: #d0d0d0; }
+.cm-s-monokai .CodeMirror-cursor { border-left: 1px solid #f8f8f0; }
+
+.cm-s-monokai span.cm-comment { color: #75715e; }
+.cm-s-monokai span.cm-atom { color: #ae81ff; }
+.cm-s-monokai span.cm-number { color: #ae81ff; }
+
+.cm-s-monokai span.cm-property, .cm-s-monokai span.cm-attribute { color: #a6e22e; }
+.cm-s-monokai span.cm-keyword { color: #f92672; }
+.cm-s-monokai span.cm-builtin { color: #66d9ef; }
+.cm-s-monokai span.cm-string { color: #e6db74; }
+
+.cm-s-monokai span.cm-variable { color: #f8f8f2; }
+.cm-s-monokai span.cm-variable-2 { color: #9effff; }
+.cm-s-monokai span.cm-variable-3, .cm-s-monokai span.cm-type { color: #66d9ef; }
+.cm-s-monokai span.cm-def { color: #fd971f; }
+.cm-s-monokai span.cm-bracket { color: #f8f8f2; }
+.cm-s-monokai span.cm-tag { color: #f92672; }
+.cm-s-monokai span.cm-header { color: #ae81ff; }
+.cm-s-monokai span.cm-link { color: #ae81ff; }
+.cm-s-monokai span.cm-error { background: #f92672; color: #f8f8f0; }
+
+.cm-s-monokai .CodeMirror-activeline-background { background: #373831; }
+.cm-s-monokai .CodeMirror-matchingbracket {
+  text-decoration: underline;
+  color: white !important;
+}
+/* line 1, /Users/julian/Desktop/app-academy/app/assets/stylesheets/component_styles/admin_area.scss */
+.admin-area {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+/* line 7, /Users/julian/Desktop/app-academy/app/assets/stylesheets/component_styles/admin_area.scss */
+.admin-area h2 {
+  text-align: center;
+}
+
+/* line 11, /Users/julian/Desktop/app-academy/app/assets/stylesheets/component_styles/admin_area.scss */
+.application-index-container {
+  margin-top: 25px;
+  border-bottom: 3px double #ccc;
+  height: 40%;
+  padding-bottom: 2px;
+  overflow: hidden;
+}
+
+/* line 18, /Users/julian/Desktop/app-academy/app/assets/stylesheets/component_styles/admin_area.scss */
+.application-index-container h4 {
+  margin-left: 20px;
+}
+
+/* line 22, /Users/julian/Desktop/app-academy/app/assets/stylesheets/component_styles/admin_area.scss */
+.applications {
+  border-top: 1px solid #ccc;
+  margin-top: 20px;
+  list-style: none;
+  height: 100%;
+  overflow-y: scroll;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 32, /Users/julian/Desktop/app-academy/app/assets/stylesheets/component_styles/admin_area.scss */
+.application-index-item {
+  padding-left: 20px;
+  height: 30px;
+  border-bottom: 1px solid #ccc;
+}
+
+/* line 38, /Users/julian/Desktop/app-academy/app/assets/stylesheets/component_styles/admin_area.scss */
+.application-index-item:nth-of-type(2n) {
+  background-color: #aaa;
+}
+
+/* line 42, /Users/julian/Desktop/app-academy/app/assets/stylesheets/component_styles/admin_area.scss */
+.application-index-item span {
+  padding-right: 5px;
+}
+
+/* line 46, /Users/julian/Desktop/app-academy/app/assets/stylesheets/component_styles/admin_area.scss */
+.full-applicant-info {
+  padding: 20px;
+}
+
+/* line 50, /Users/julian/Desktop/app-academy/app/assets/stylesheets/component_styles/admin_area.scss */
+.applicant-info {
+  float: left;
+}
+
+/* line 54, /Users/julian/Desktop/app-academy/app/assets/stylesheets/component_styles/admin_area.scss */
+.applicant-info ul {
+  list-style: none;
+  padding-left: 15px;
+}
+
+/* line 59, /Users/julian/Desktop/app-academy/app/assets/stylesheets/component_styles/admin_area.scss */
+.app-code-container {
+  float: left;
+  min-width: 500px;
+  margin-left: 20px;
+}
+
+/* line 65, /Users/julian/Desktop/app-academy/app/assets/stylesheets/component_styles/admin_area.scss */
+.appButtons .btn {
+  margin-right: 10px;
+}
+/* line 1, /Users/julian/Desktop/app-academy/app/assets/stylesheets/component_styles/app_success.scss */
+.success-wrapper {
+  margin-top: 50px;
+  width: 80%;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  padding: 20px;
+}
+/* line 1, /Users/julian/Desktop/app-academy/app/assets/stylesheets/component_styles/application.scss */
+.application-wrapper {
+  text-align: center;
+}
+
+/* line 5, /Users/julian/Desktop/app-academy/app/assets/stylesheets/component_styles/application.scss */
+.application-form {
+  text-align: left;
+  margin: 0 auto;
+  width: 550px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  padding: 40px;
+  margin-top: 50px;
+}
+/* line 1, /Users/julian/Desktop/app-academy/app/assets/stylesheets/component_styles/coding_challenge.scss */
+.coding-challenge-wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* line 5, /Users/julian/Desktop/app-academy/app/assets/stylesheets/component_styles/coding_challenge.scss */
+.coding-challenge-wrapper .btn {
+  margin-top: 10px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+

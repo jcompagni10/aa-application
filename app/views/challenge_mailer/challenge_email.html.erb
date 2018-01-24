@@ -3,18 +3,17 @@
   <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
 </head>
 <body>
-  <h4>Dear <%= @application.first_name %>,</h4>
+  <h4>Dear <%= application.first_name %>,</h4>
   <p>
     Thanks for applying to App Academy. To continue with the application proccess,
     you will need to take a coding challenge. 
   </p>
   <p>
     To access the coding challenge please follow this link: 
-    <%=  @root_url + "#/coding_challenge/" + @challenge.url %>
+    <%=  root_url + "#/coding_challenge/" + application.coding_challenge.url %>
   </p>
-  <br>
-  Sincerely,
-  </br>
+  <br/>
+  Sincerely, <br/>
   The a/A Team.
 </body>
 </html>
