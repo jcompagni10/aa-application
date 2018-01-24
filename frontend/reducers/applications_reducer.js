@@ -1,4 +1,7 @@
-import { RECEIVE_APPLICATION, RECEIVE_APPLICATIONS} from "../actions/application";
+import {
+  RECEIVE_APPLICATION,
+  RECEIVE_APPLICATIONS
+} from "../actions/application";
 
 let defaultState = {
   currentApplication: null,
@@ -16,7 +19,7 @@ export default (state = defaultState, action) => {
       return newState;
     case RECEIVE_APPLICATIONS:
       const allApps = action.applications;
-      return Object.assign({}, state, {allApps});
+      return Object.assign({}, state, { allApps });
     default:
       return state;
   }

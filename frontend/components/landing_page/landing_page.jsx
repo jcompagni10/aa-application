@@ -5,7 +5,7 @@ export default ()=>(
   <div>
     <h1> Welcome to App Academy</h1>
     <Link to ="/application" className = "btn btn-primary">
-      Apply to a/A
+      Apply Now
     </Link>
     <Link to = "/admin" className = "btn btn-warning">
       Manage Applications

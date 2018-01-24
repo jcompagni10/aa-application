@@ -26,7 +26,7 @@ const receiveApplicationErrors = errors => ({
 
 export const createApplication = appData => dispatch =>
   postApplication(appData).then(
-    application => dispatch(receiveApplication(application)),
+    application =>dispatch(receiveApplication(application)),
     response => dispatch(receiveApplicationErrors(response.responseJSON.errors))
   );
 

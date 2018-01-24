@@ -1,7 +1,9 @@
 export const postApplication = (application) => (
   $.post({
     url: '/api/student_applications',
-    data: {application}
+    data: {application},
+    // TODO: this shouldn't be neccesary ajax won't return json without it
+    dataType: 'json'
   })
 );
 

@@ -7,4 +7,3 @@ json.extract! application,
               :id,
               :code,
               :challenge_url
-

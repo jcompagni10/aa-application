@@ -53,8 +53,8 @@ export default class CodingChallenge extends React.Component{
          <article>
            <h4>Instructions:</h4>
            <p>
-             Write that given an input, student, determines if that student
-            should be admited to admited to a bootcamp. 
+            Write a program that given an input, student, determines if that student
+            should be admitted to a bootcamp. 
            </p>
          </article>
          <Errors errors = {this.props.errors} />

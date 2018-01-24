@@ -8,7 +8,8 @@ export default ({application}) => (
     </h3>
     <h4>
       Instructions for continuing with the next portion of the application
-      proccess have been sent to <i>{application.email}.</i>
+      proccess have been sent to <i>{application.email}.</i><br/>
+      If you don't see it, check your spam folder.
     </h4>
     <br/>
     <p>
