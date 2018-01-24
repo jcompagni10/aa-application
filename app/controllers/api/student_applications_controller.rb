@@ -7,7 +7,8 @@ class Api::StudentApplicationsController < ApplicationController
       begin
         ChallengeMailer.challenge_email(@application, root_url).deliver_now
       rescue
-        # allow mailer to fail silently
+        # allow mailer to fail without crashing program
+        puts "email could not be sent"
       end
       render :show
     else
