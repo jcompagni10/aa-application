@@ -4,7 +4,11 @@ class Api::StudentApplicationsController < ApplicationController
     @application = StudentApplication.new(application_params)
     if @application.save
       @application.generate_challenge
-      ChallengeMailer.challenge_email(@application, root_url).deliver_now
+      begin
+        ChallengeMailer.challenge_email(@application, root_url).deliver_now
+      rescue
+        # allow mailer to fail silently
+      end
       render :show
     else
       render json: { errors: @application.errors.full_messages }, status: 422

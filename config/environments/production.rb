@@ -62,6 +62,16 @@ Rails.application.configure do
   # config.active_job.queue_name_prefix = "app-academy_#{Rails.env}"
   config.action_mailer.perform_caching = false
 
+  config.action_mailer.smtp_settings = {
+    address:              'smtp.gmail.com',
+    port:                 587,
+    domain:               'juliancompagniportis.com',
+    user_name:            'jcompagni',
+    password:             '63Fountain',
+    authentication:       'plain',
+    enable_starttls_auto: true  
+  }
+
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
   # config.action_mailer.raise_delivery_errors = false

@@ -31,8 +31,8 @@ export default class Application extends React.Component {
     return (
       <div className="application-wrapper">
         <h2> Application </h2>
-        <Errors errors={this.props.errors} />
         <form className = "application-form">
+        <Errors errors={this.props.errors} />
           <div className="form-group">
             <label htmlFor="first-name">First Name: </label>
             <input
