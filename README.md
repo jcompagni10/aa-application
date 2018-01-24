@@ -14,7 +14,8 @@ An application submission and management website with a Rails/PostgreSQL backend
   * clone this repository
   * run ``bundle`` and ``npm install``
   * launch rails server
+  * unless you provide an email account in `development.rb` the mailer will not work locally
 ## Future Improvements
 
-* currently the code area only supports javascript, this could be extended to support a myriad of languages
-* more tests
+* Currently the code area only supports javascript, this could be extended to support a myriad of languages
+* The testing suite is currently very sparse due to the time constraints of the project. In a production environment it would need to be expanded
