@@ -1,6 +1,10 @@
 {
   "name": "app-academy",
   "private": true,
+  "engines": {
+    "node": "6.10.1",
+    "npm": "3.10.x"
+  },
   "dependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
@@ -36,7 +40,9 @@
   },
   "scripts": {
     "webpack": "webpack --watch",
-    "test": "jest"
+    "test": "jest",
+    "postinstall": "webpack"
+
   },
   "author": "",
   "license": "ISC"
