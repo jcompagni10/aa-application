@@ -42,7 +42,6 @@
     "webpack": "webpack --watch",
     "test": "jest",
     "postinstall": "webpack"
-
   },
   "author": "",
   "license": "ISC"
